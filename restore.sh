@@ -20,8 +20,17 @@ sed -i '/^$/d' credentials-files
 cat credentials-files > .gitignore
 rm credentials-files credentials-directories
 
+# Restore homebrew packages
+(
+cd packages/homebrew 
+brew bundle
+rm Brewfile.lock.json
+)
+
 while read secret; do
   cp -rf credentials/$secret $secret
 done <.gitignore
+
+
 
 stow .
