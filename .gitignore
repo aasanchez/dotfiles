@@ -1,0 +1,7 @@
+.gpg/gpg
+.gpg/gpg.asc
+.ssh/id_ed25519
+.ssh/id_ed25519.pub
+.ssh/id_rsa
+.ssh/id_rsa.pub
+.wakatime.cfg

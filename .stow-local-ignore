@@ -1,0 +1,9 @@
+\.git
+\.gitignore
+\.scripts
+\.gitmodules
+credentials
+packages
+backup.sh
+restore.sh
+README.md
