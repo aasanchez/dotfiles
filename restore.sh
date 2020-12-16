@@ -3,7 +3,7 @@ stow -D --verbose .
 
 # Restore homebrew packages
 (
-cd packages/homebrew 
+cd packages 
 brew bundle
 rm Brewfile.lock.json
 )
@@ -47,3 +47,4 @@ eval $(ssh-agent -s); ssh-add -k ~/.ssh/id_rsa
 gpg --import .gpg/gpg.asc
 
 echo ".vscode" >> .gitignore
+echo ".ssh/known_hosts" >> .gitignore

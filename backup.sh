@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-. packages/npm.sh
-ROOT=$(pwd)
-backup-npm
 
+npm list -g --depth 0 > packages/npm
+sed -i '/^$/d' packages/npm
 ( 
-cd packages/homebrew 
+cd packages 
 rm Brewfile*
 brew bundle dump
 )
 
 code --list-extensions | xargs -L 1 echo code --install-extension > packages/vscode-packages
+
+vagrant plugin list > packages/vagrant
