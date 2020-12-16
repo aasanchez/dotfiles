@@ -31,6 +31,9 @@ while read secret; do
   cp -rf credentials/$secret $secret
 done <.gitignore
 
-
-
 stow .
+
+sudo chmod 0400 ~/.ssh/id_rsa
+eval $(ssh-agent -s); ssh-add -k ~/.ssh/id_rsa
+
+gpg --import .gpg/gpg.asc
