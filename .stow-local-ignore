@@ -6,3 +6,4 @@ packages
 backup.sh
 restore.sh
 README.md
+.DS_Store

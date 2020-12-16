@@ -2,6 +2,7 @@
 [user]
 	name = Alexis Sanchez
 	email = aasanchez@gmail.com
+	signingKey = 8148992D557EFBC54AE77190C2622095C2CC3578
 [core]
 	excludesfile = /Users/aasanchez/.gitignore_global
 [filter "lfs"]
@@ -9,3 +10,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgSign = true
+[includeIf "gitdir:~/Development/Zartis/"]
+    path = ~/Development/Zartis/.gitconfig

@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 stow -D --verbose .
 
+# Restore homebrew packages
+(
+cd packages/homebrew 
+brew bundle
+rm Brewfile.lock.json
+)
+
+while read extension; do
+  $extension
+done <packages/vscode-packages
+
 # Update internal gitignore
 tree -af  credentials > credentials-files
 tree -afd credentials > credentials-directories
@@ -20,16 +31,13 @@ sed -i '/^$/d' credentials-files
 cat credentials-files > .gitignore
 rm credentials-files credentials-directories
 
-# Restore homebrew packages
-(
-cd packages/homebrew 
-brew bundle
-rm Brewfile.lock.json
-)
-
 while read secret; do
   cp -rf credentials/$secret $secret
 done <.gitignore
+
+# if [ -f "~/Library/Application\ Support/Code/User/settings.json" ]; then
+#   rm "/Users/aasanchez/Library/Application\ Support/Code/User/settings.json"
+# fi 
 
 stow .
 
@@ -37,3 +45,5 @@ sudo chmod 0400 ~/.ssh/id_rsa
 eval $(ssh-agent -s); ssh-add -k ~/.ssh/id_rsa
 
 gpg --import .gpg/gpg.asc
+
+echo ".vscode" >> .gitignore

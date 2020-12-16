@@ -1,0 +1,7 @@
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension eamodio.gitlens
+code --install-extension JHeilingbrunner.vscode-gnupg-tool
+code --install-extension kiteco.kite
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
