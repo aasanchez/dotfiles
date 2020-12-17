@@ -35,9 +35,9 @@ while read secret; do
   cp -rf credentials/$secret $secret
 done <.gitignore
 
-# if [ -f "~/Library/Application\ Support/Code/User/settings.json" ]; then
-#   rm "/Users/aasanchez/Library/Application\ Support/Code/User/settings.json"
-# fi 
+if [ -f "~/Library/Application\ Support/Code/User/settings.json" ]; then
+  rm "/Users/aasanchez/Library/Application\ Support/Code/User/settings.json"
+fi 
 
 stow .
 
