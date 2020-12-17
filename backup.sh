@@ -11,3 +11,5 @@ brew bundle dump
 code --list-extensions | xargs -L 1 echo code --install-extension > packages/vscode-packages
 
 vagrant plugin list > packages/vagrant
+
+cp .ssh/known_hosts credentials/.ssh/known_hosts 
