@@ -14,3 +14,5 @@
 	gpgSign = true
 [includeIf "gitdir:~/Development/Zartis/"]
     path = ~/Development/Zartis/.gitconfig
+[includeIf "gitdir:~/Development/Pulzu/"]
+    path = ~/Development/Pulzu/.gitconfig

@@ -7,6 +7,6 @@
 .ssh/id_rsa
 .ssh/id_rsa.pub
 .ssh/known_hosts
-.wakatime.cfg
-.vscode
 .ssh/known_hosts
+.vscode
+.wakatime.cfg
