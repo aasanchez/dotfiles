@@ -3,6 +3,8 @@
 	name = Alexis Sanchez
 	email = aasanchez@gmail.com
 	signingKey = 8148992D557EFBC54AE77190C2622095C2CC3578
+[pull]
+	rebase = false
 [core]
 	excludesfile = /Users/aasanchez/.gitignore_global
 [filter "lfs"]
