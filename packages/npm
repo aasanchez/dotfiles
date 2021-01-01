@@ -1,7 +1,7 @@
 @angular/cli@11.0.5
-expo-cli@4.0.16
-gatsby-cli@2.16.1
-netlify-cli@2.69.10
+expo-cli@4.0.17
+gatsby-cli@2.16.2
+netlify-cli@2.69.11
 newman@5.2.1
-serverless@2.15.0
+serverless@2.17.0
 standard@16.0.3
