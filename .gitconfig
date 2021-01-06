@@ -1,20 +1,22 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Alexis Sanchez
-	email = aasanchez@gmail.com
-	signingKey = 8148992D557EFBC54AE77190C2622095C2CC3578
+    name = Alexis Sanchez
+    email = aasanchez@gmail.com
+    signingKey = 8148992D557EFBC54AE77190C2622095C2CC3578
 [pull]
-	rebase = false
+    rebase = false
 [core]
-	excludesfile = /Users/aasanchez/.gitignore_global
+    excludesfile = /Users/aasanchez/.gitignore_global
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [commit]
-	gpgSign = true
+    gpgSign = true
 [includeIf "gitdir:~/Development/Zartis/"]
     path = ~/Development/Zartis/.gitconfig
 [includeIf "gitdir:~/Development/Pulzu/"]
     path = ~/Development/Pulzu/.gitconfig
+[init]
+    defaultBranch = master
