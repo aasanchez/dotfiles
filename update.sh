@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-npm update -g
 npm list -g --depth 0 > packages/npm
 sed -i "s/[├─└── ]//g" packages/npm
 sed -i "/nvm/g" packages/npm
@@ -9,7 +8,6 @@ sed -i '/^$/d' packages/npm
 ( 
 cd packages 
 rm Brewfile*
-brew upgrade
 brew bundle dump
 )
 
@@ -21,6 +19,8 @@ cp .ssh/authorized_keys credentials/.ssh/authorized_keys
 while read secret; do
     cp -rf $secret credentials/$secret 
 done <.gitignore
+
+rm -rf credentials/.vscode
 
 stow -D --verbose .
 stow .
