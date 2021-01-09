@@ -1,2 +1,4 @@
 [user]
-	email = alexis.sanchez@zartis.com
+    email = alexis.sanchez@zartis.com
+[core]
+    excludesfile = /Users/aasanchez/Development/Zartis/.gitignore

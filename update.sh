@@ -17,3 +17,10 @@ code --list-extensions | xargs -L 1 echo code --install-extension > packages/vsc
 vagrant plugin list > packages/vagrant
 cp .ssh/known_hosts credentials/.ssh/known_hosts 
 cp .ssh/authorized_keys credentials/.ssh/authorized_keys 
+
+while read secret; do
+    cp -rf $secret credentials/$secret 
+done <.gitignore
+
+stow -D --verbose .
+stow .

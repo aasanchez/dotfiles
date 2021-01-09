@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 stow -D --verbose .
 
-# Restore homebrew packages
-# (
-# cd packages 
-# brew bundle
-# rm Brewfile.lock.json
-# )
+Restore homebrew packages
+(
+cd packages 
+brew bundle
+rm Brewfile.lock.json
+)
 
-# while read extension; do
-#   $extension
-# done <packages/vscode-packages
+while read extension; do
+    $extension
+done <packages/vscode-packages
 
 # Update internal gitignore
 # tree -af  credentials > credentials-files
@@ -28,7 +28,7 @@ stow -D --verbose .
 # sed -i "s/.git//g" credentials-files
 # sed -i "s/README.md//g" credentials-files
 # sed -i '/^$/d' credentials-files
-# cat credentials-files > .gitignore
+# cat credentials-files > .gi§tignore
 # rm credentials-files credentials-directories
 
 # while read secret; do

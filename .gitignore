@@ -10,3 +10,4 @@
 .ssh/known_hosts
 .vscode
 .wakatime.cfg
+.ssh/authorized_keys
