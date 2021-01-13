@@ -1,10 +1,17 @@
 .aws/credentials
 .gpg/gpg.asc
 .netlify/config.json
+.ssh/config
 .ssh/id_ed25519
 .ssh/id_ed25519.pub
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.ssh/esl-www-dev
+.ssh/esl-www-dev.pub
+.ssh/esl-www-stg
+.ssh/esl-www-stg.pub
+.ssh/esl-www-prd
+.ssh/esl-www-prd.pub
 .ssh/known_hosts
 .ssh/known_hosts
 .vscode
