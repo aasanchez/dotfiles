@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 stow -D --verbose .
 
-Restore homebrew packages
 (
 cd packages 
 brew bundle
@@ -12,28 +11,27 @@ while read extension; do
     $extension
 done <packages/vscode-packages
 
-# Update internal gitignore
-# tree -af  credentials > credentials-files
-# tree -afd credentials > credentials-directories
-# sed -i '$ d' credentials-files
-# sed -i '$ d' credentials-directories
-# sed -i '/^$/d' credentials-files
-# sed -i '/^$/d' credentials-directories
-# sed -i "s/[^A-Za-z0-9._\/]//g" credentials-files
-# sed -i "s/[^A-Za-z0-9._\/]//g" credentials-directories
-# while read directory; do
-#   sed -i "s|^$directory$||g" credentials-files
-# done <credentials-directories
-# sed -i "s/credentials\///g" credentials-files
-# sed -i "s/.git//g" credentials-files
-# sed -i "s/README.md//g" credentials-files
-# sed -i '/^$/d' credentials-files
-# cat credentials-files > .gi§tignore
-# rm credentials-files credentials-directories
+tree -af  credentials > credentials-files
+tree -afd credentials > credentials-directories
+sed -i '$ d' credentials-files
+sed -i '$ d' credentials-directories
+sed -i '/^$/d' credentials-files
+sed -i '/^$/d' credentials-directories
+sed -i "s/[^A-Za-z0-9._\/]//g" credentials-files
+sed -i "s/[^A-Za-z0-9._\/]//g" credentials-directories
+while read directory; do
+    sed -i "s|^$directory$||g" credentials-files
+done <credentials-directories
+sed -i "s/credentials\///g" credentials-files
+sed -i "s/.git//g" credentials-files
+sed -i "s/README.md//g" credentials-files
+sed -i '/^$/d' credentials-files
+cat credentials-files > .gi§tignore
+rm credentials-files credentials-directories
 
-# while read secret; do
-#   cp -rf credentials/$secret $secret
-# done <.gitignore
+while read secret; do
+    cp -rf credentials/$secret $secret
+done <.gitignore
 
 stow .
 
@@ -42,6 +40,5 @@ stow .
 
 # gpg --import .gpg/gpg.asc
 
-# echo ".vscode" >> .gitignore
-# echo ".ssh/known_hosts" >> .gitignore
-# sort -o  .gitignore .gitignore
+echo ".vscode" >> .gitignore
+sort -o  .gitignore .gitignore
