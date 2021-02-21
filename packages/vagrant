@@ -1,2 +1,3 @@
-vagrant-hostsupdater (1.2.0, global)
-vagrant-vbguest (0.28.0, global)
+vagrant-env (0.0.3, global)
+vagrant-hostsupdater (1.2.1, global)
+vagrant-vbguest (0.29.0, global)

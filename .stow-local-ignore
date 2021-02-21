@@ -1,10 +1,11 @@
+.DS_Store
+.ssh/known_hosts
+README.md
 \.git
 \.gitignore
 \.gitmodules
+backup.sh
 credentials
 packages
-backup.sh
 restore.sh
-README.md
-.DS_Store
-.ssh/known_hosts
+update.sh
