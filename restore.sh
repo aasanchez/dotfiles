@@ -26,7 +26,7 @@ sed -i "s/credentials\///g" credentials-files
 sed -i "s/.git//g" credentials-files
 sed -i "s/README.md//g" credentials-files
 sed -i '/^$/d' credentials-files
-cat credentials-files > .gi§tignore
+cat credentials-files > .gitignore
 rm credentials-files credentials-directories
 
 while read secret; do
