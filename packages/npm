@@ -1,9 +1,11 @@
-@angular/cli@11.2.1
+@angular/cli@11.2.3
 docsify-cli@4.4.2
 eclint@2.8.1
-expo-cli@4.1.6
-gatsby-cli@2.19.1
+expo-cli@4.2.1
+gatsby-cli@2.19.2
 netlify-cli@2.71.0
 newman@5.2.2
-serverless@2.25.2
+serverless@2.28.7
 standard@16.0.3
+ts-standard@10.0.0
+UNMETPEERDEPENDENCYtypescript@>=3.8

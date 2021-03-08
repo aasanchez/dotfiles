@@ -1,3 +1,4 @@
+code --install-extension af4jm.vscode-icalendar
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension bashmish.es6-string-css
 code --install-extension bierner.jsdoc-markdown-highlighting
@@ -9,9 +10,9 @@ code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
+code --install-extension EditorConfig.EditorConfig
 code --install-extension hashicorp.terraform
 code --install-extension JHeilingbrunner.vscode-gnupg-tool
-code --install-extension kiteco.kite
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
 code --install-extension ms-toolsai.jupyter
