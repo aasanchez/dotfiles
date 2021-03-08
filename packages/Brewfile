@@ -31,8 +31,8 @@ brew "wp-cli"
 brew "youtube-dl"
 brew "zsh"
 brew "aws/tap/aws-sam-cli"
-brew "hashicorp/tap/packer"
-brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/packer", link: false
+brew "hashicorp/tap/terraform", link: false
 cask "adobe-acrobat-reader"
 cask "adoptopenjdk"
 cask "alfred"

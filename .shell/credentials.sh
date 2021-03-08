@@ -1,0 +1,1 @@
+export VAGRANT_TOKEN=cUG77OpepYT8yw.atlasv1.WaRQDIasgNNjFaeonrZRKQQtAV3tJ5OWUQ0k25JyWXlzzv4YsgcdGVqNeuzy4n0icMw
