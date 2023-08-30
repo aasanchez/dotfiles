@@ -4,6 +4,11 @@
   username = aasanchez
 [init]
   defaultbranch = master
+[core]
+  excludesfile = ~/.gitignore
+  editor = code --wait
+[pull]
+    rebase = false
 [gpg]
   format = ssh
 [gpg "ssh"]
