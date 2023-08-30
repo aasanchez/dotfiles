@@ -1,0 +1,14 @@
+[user]
+	name = Alexis Sánchez
+	email = alexis.sanchez@eva.global
+	username = aasanchez
+[init]
+	defaultBranch = master
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+    gpgsign = true
+[user]
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPdId9IWjlOsklsXJJoJAJVv20FrqLJfSdCGGSNaAdYW
