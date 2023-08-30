@@ -1,14 +1,21 @@
 [user]
-	name = Alexis Sánchez
-	email = alexis.sanchez@eva.global
-	username = aasanchez
+  name = Alexis Sánchez
+  email = aasanchez@gmail.com
+  username = aasanchez
 [init]
-	defaultBranch = master
+  defaultbranch = master
 [gpg]
-    format = ssh
+  format = ssh
 [gpg "ssh"]
-    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
-    gpgsign = true
+  gpgsign = true
+  signoff = true
 [user]
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPdId9IWjlOsklsXJJoJAJVv20FrqLJfSdCGGSNaAdYW
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPdId9IWjlOsklsXJJoJAJVv20FrqLJfSdCGGSNaAdYW
+
+[includeIf "gitdir:~/Development/EVA-Global/**"]
+  path = ~/Development/EVA-Global/.gitconfig
+
+[includeIf "gitdir:~/Development/Moovv/**"]
+  path = ~/Development/Moovv/.gitconfig
