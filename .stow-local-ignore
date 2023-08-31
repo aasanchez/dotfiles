@@ -1,0 +1,15 @@
+.DS_Store
+README.md
+\.git
+\.gitignore
+\.gitmodules
+backup.sh
+credentials
+packages
+restore.sh
+update.sh
+refresh.sh
+item
+items
+Dropbox
+*OneDrive-EVASolutionsGroupOy
