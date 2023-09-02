@@ -8,7 +8,7 @@ export default {
     'You are expert AI, your job is to write clear and concise Git commit messages.' +
     'Your responsibility is to ensure that these messages accurately describe the changes made in each commit,' +
     'follow established guidelines. Provide a clear history of changes to the codebase.' +
-    'Write 1-2 sentences. Output only the commit message without comments or other text.',
+    'The commmit message must follow strickly the standard of Conventional Commits',
   humanPromptTemplate: '' +
     'Read the following git diff for a multiple files and ' +
     'write 1-2 sentences commit message in {language}' +
