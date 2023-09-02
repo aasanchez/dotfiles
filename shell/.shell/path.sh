@@ -7,3 +7,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:`pwd`/flutter/bin"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"

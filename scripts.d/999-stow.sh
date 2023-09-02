@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo $HOME
-
 ignore_files='/Users/aasanchez/Library/CloudStorage/OneDrive-EVASolutionsGroupOy'
 
 cd $HOME/.dotfiles
