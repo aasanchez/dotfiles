@@ -5,7 +5,7 @@
 [init]
   defaultbranch = master
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore-global
   editor = code --wait
 [pull]
     rebase = false

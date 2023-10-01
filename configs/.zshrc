@@ -44,11 +44,5 @@ source /Users/aasanchez/.config/op/plugins.sh
 [ -s "/Users/aasanchez/.bun/_bun" ] && source "/Users/aasanchez/.bun/_bun"
 
 # bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export TS_VERSION_CHECK=0
 
-# GoLang
-export GOPATH=$HOME/.go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+export TS_VERSION_CHECK=0
