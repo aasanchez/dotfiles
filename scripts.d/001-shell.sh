@@ -3,7 +3,6 @@
 echo "#!/usr/bin/env bash" > shell/.shell/credentials.sh
 echo "" >> shell/.shell/credentials.sh
 
-
 GITHUB_ACCESS_TOKEN=$(op item get 'GitHub' --format json | jq --raw-output '.fields | .[] | select(.label == "Personal access token") | .value')
 echo "export GITHUB_ACCESS_TOKEN=\"$GITHUB_ACCESS_TOKEN\"" >> shell/.shell/credentials.sh
 
