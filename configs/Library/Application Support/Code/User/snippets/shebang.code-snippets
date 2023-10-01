@@ -1,0 +1,11 @@
+{
+	"shebang": {
+		"prefix": "Shebang",
+		"body": [
+		  "#!/usr/bin/env bash",
+		  "",
+		  ""
+		],
+		"description": "Bash file"
+	  }
+}

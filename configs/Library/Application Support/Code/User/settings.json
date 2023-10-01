@@ -1,0 +1,74 @@
+{
+    "editor.wordBreak": "keepAll",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.external.osxExec": "term.app",
+    "workbench.editor.autoLockGroups": {
+        "default": true
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.mac": "/Users/aasanchez/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+        "vscode-kubernetes.minikube-path.mac": "/Users/aasanchez/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    },
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "redhat.telemetry.enabled": true,
+    "cody.serverEndpoint": "https://sourcegraph.com/",
+    "go.toolsManagement.autoUpdate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "onFocusChange",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "MesloLGS NF, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontFamily": "MesloLGS NF"
+}
