@@ -19,8 +19,5 @@
 [user]
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPdId9IWjlOsklsXJJoJAJVv20FrqLJfSdCGGSNaAdYW
 
-[includeIf "gitdir:~/Development/EVA-Global/**"]
-  path = ~/Development/EVA-Global/.gitconfig
-
 [includeIf "gitdir:~/Development/Moovv/**"]
   path = ~/Development/Moovv/.gitconfig
