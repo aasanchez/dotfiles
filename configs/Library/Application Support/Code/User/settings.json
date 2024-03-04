@@ -65,7 +65,7 @@
         "editor.selectionHighlight": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "git.openRepositoryInParentFolders": "never",
     "editor.fontFamily": "MesloLGS NF, Monaco, 'Courier New', monospace",

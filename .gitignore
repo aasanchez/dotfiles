@@ -1,6 +1,11 @@
+.DS_Store
+Brewfile.lock.json
+configs/.shell/credentials.sh
+configs/.ssh/*.pgp
 configs/.ssh/gpg
 configs/.ssh/id_ed25519
 configs/.ssh/id_ed25519.pub
 configs/.ssh/known_hosts*
+configs/.ssh/watechnology
+configs/.ssh/watechnology.pub
 configs/.wakatime.cfg
-configs/.shell/credentials.sh

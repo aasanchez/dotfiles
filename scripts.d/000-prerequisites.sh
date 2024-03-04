@@ -13,3 +13,5 @@ fi
 brew_check stow
 brew_check "1password-cli"
 brew_check "jq"
+
+sudo softwareupdate --install-rosetta
