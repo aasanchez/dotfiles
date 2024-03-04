@@ -9,3 +9,4 @@ configs/.ssh/known_hosts*
 configs/.ssh/watechnology
 configs/.ssh/watechnology.pub
 configs/.wakatime.cfg
+.gitconfig
