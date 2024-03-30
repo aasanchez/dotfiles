@@ -32,8 +32,11 @@ bootstrap: ## is used solely for fulfilling dependencies of the project
 	@./scripts.d/000-prerequisites.sh
 
 update: ## update
-	# @./scripts.d/001-shell.sh
+	@./scripts.d/001-shell.sh
 	@./scripts.d/003-git.sh
 
 stow: #refactor
 	@./scripts.d/999-stow.sh
+
+backup:
+	@cd ~/.dotfiles/ && brew bundle dump

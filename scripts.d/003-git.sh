@@ -7,7 +7,7 @@ git config --global user.email alexis@watechnology.com
 git config --global user.username aasanchez
 git config --global user.signingkey "$GPG_KEY"
 
-git config --global init.defaultbranch master
+git config --global init.defaultbranch main
 
 git config --global core.excludesfile ~/.gitignore-global
 git config --global core.editor "code --wait"
