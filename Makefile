@@ -39,4 +39,4 @@ stow: #refactor
 	@./scripts.d/999-stow.sh
 
 backup:
-	@cd ~/.dotfiles/ && brew bundle dump
+	@./scripts.d/002-brew.sh
