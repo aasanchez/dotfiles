@@ -31,8 +31,9 @@ help:
 bootstrap: ## is used solely for fulfilling dependencies of the project
 	@./scripts.d/000-prerequisites.sh
 
-refactor: ## is used solely for fulfilling dependencies of the project
-	@./scripts.d/001-shell.sh
+update: ## update
+	# @./scripts.d/001-shell.sh
+	@./scripts.d/003-git.sh
 
 stow: #refactor
 	@./scripts.d/999-stow.sh

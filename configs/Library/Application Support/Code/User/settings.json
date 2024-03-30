@@ -70,5 +70,6 @@
     "git.openRepositoryInParentFolders": "never",
     "editor.fontFamily": "MesloLGS NF, Monaco, 'Courier New', monospace",
     "editor.fontSize": 13,
-    "terminal.integrated.fontFamily": "MesloLGS NF"
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "explorer.confirmDragAndDrop": false
 }
