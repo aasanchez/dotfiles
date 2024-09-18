@@ -34,7 +34,7 @@
     ],
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.iconTheme": "material-icon-theme",
-    "terminal.external.osxExec": "term.app",
+    "terminal.external.osxExec": "iTerm.app",
     "workbench.editor.autoLockGroups": {
         "default": true
     },
@@ -71,5 +71,26 @@
     "editor.fontFamily": "MesloLGS NF, Monaco, 'Courier New', monospace",
     "editor.fontSize": 13,
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "cloudcode.duetAI.project": "pritunl-391015",
+    "cloudcode.duetAI.languages": [
+        "git-commit",
+        "shellscript",
+        "diff",
+        "go"
+    ],
+    "cloudcode.project": "pritunl-391015",
+    "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
+    "svelte.enable-ts-plugin": true,
+    "workbench.editorAssociations": {
+        "*.php": "default"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "remote.SSH.remotePlatform": {
+        "*.gitpod.io": "linux"
+    },
+    "terminal.external.linuxExec": "zsh",
+    "[markdown]": {
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+    }
 }

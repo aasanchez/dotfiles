@@ -5,3 +5,6 @@ alias docker-cleanup='docker stop $(docker ps -a -q); docker rm $(docker ps -a -
 alias docker-cleanup-full='docker stop $(docker ps -a -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q) -f ; docker volume prune -f; docker system prune --all --force --volumes'
 alias 1password='eval $(op signin my)'
 alias update='git add .; LC_ALL=C GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"'
+alias nv='nvim'
+alias bitwarden='bw login --apikey'
+alias update-fork='git checkout main; git fetch upstream; git checkout main; git merge upstream/main'
