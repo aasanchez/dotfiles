@@ -1,0 +1,6 @@
+[submodule "Personal"]
+	path = Personal
+	url = https://github.com/aasanchez/Personal.git
+[submodule "QTechGames"]
+	path = QTechGames
+	url = https://github.com/aasanchez/QTechGames.git
