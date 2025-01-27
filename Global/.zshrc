@@ -24,11 +24,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-alias nv='nvim .'
-alias lg='lazygit'
-alias docker-obliterate='docker-compose down -v --rmi all && docker-compose rm -f -v'
-alias xbar-dir='cd /Users/aasanchez/Library/Application\ Support/xbar/plugins'
+source $HOME/.shell/aliases.sh
+# source $HOME/.shell/credentials.sh
+source $HOME/.shell/path.sh

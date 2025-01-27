@@ -1,0 +1,24 @@
+[user]
+	name = Alexis Sánchez
+	email = aasanchez@gmail.com
+	signingkey = C2622095C2CC3578
+[core]
+	excludesfile = ~/.gitignore-global
+	editor = code --wait
+[pull]
+	rebase = false
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[includeIf "gitdir:~/Development/qthybrid/"]
+    path = ~/Development/qthybrid/.gitconfig
+[includeIf "gitdir:~/Development/techasiaportal/"]
+    path = ~/Development/techasiaportal/.gitconfig
+[includeIf "gitdir:~/Development/QTechGames/"]
+    path = ~/Development/QTechGames/.gitconfig
