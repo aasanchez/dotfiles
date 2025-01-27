@@ -16,9 +16,3 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[includeIf "gitdir:~/Development/qthybrid/"]
-    path = ~/Development/qthybrid/.gitconfig
-[includeIf "gitdir:~/Development/techasiaportal/"]
-    path = ~/Development/techasiaportal/.gitconfig
-[includeIf "gitdir:~/Development/QTechGames/"]
-    path = ~/Development/QTechGames/.gitconfig
